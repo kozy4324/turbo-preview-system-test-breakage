@@ -1,0 +1,14 @@
+<%= link_to 'back', articles_path %>
+
+<h1>New Article</h1>
+
+<%= form_with model: @article do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
