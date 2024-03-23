@@ -4,6 +4,7 @@ class ArticlesController < ApplicationController
   end
 
   def new
+    sleep 2
     @article = Article.new
   end
 
